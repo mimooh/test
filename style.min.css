@@ -469,7 +469,7 @@ a,
 a:visited,
 a:hover,
 a:focus {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .button,
@@ -901,57 +901,6 @@ nav:not(.toggled) ul ul .dropdown-menu-toggle:before {
 	position: relative;
 }
 
-/*--------------------------------------------------------------
-## Sidebar Navigation
---------------------------------------------------------------*/
-
-.widget-area .main-navigation li {
-	float: none;
-	display: block;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
-.dropdown-hover.both-left .widget-area .inside-right-sidebar .main-navigation ul li:hover ul,
-.dropdown-hover.both-left .widget-area .inside-right-sidebar .main-navigation ul li.sfHover ul,
-.dropdown-hover .widget-area .main-navigation ul li:hover ul,
-.dropdown-hover .widget-area .main-navigation ul li.sfHover > ul {
-	top: 0;
-	left: 100%;
-}
-
-.dropdown-hover.both-right .widget-area .main-navigation ul li:hover ul,
-.dropdown-hover.both-right .widget-area .main-navigation ul li.sfHover ul,
-.dropdown-hover .widget-area .inside-right-sidebar .main-navigation ul li:hover ul,
-.dropdown-hover .widget-area .inside-right-sidebar .main-navigation ul li.sfHover ul {
-	right: 100%;
-	left: auto;
-}
-
-.dropdown-hover.both-right .inside-left-sidebar .dropdown-menu-toggle:before,
-.dropdown-hover .inside-right-sidebar .dropdown-menu-toggle:before {
-	content: "\f104";
-}
-
-.dropdown-hover.both-left .inside-right-sidebar .dropdown-menu-toggle:before,
-.dropdown-hover .inside-left-sidebar .dropdown-menu-toggle:before {
-	content: "\f105";
-}
-
-.dropdown-click .widget-area .main-navigation ul ul {
-	top: auto;
-	position: absolute;
-	float: none;
-	width: 100%;
-	left: -99999px;
-}
-
-.dropdown-click .widget-area .main-navigation ul ul.toggled-on {
-	position: relative;
-	left: 0;
-	right: 0;
-}
 
 /*--------------------------------------------------------------
 ## Layout
@@ -992,29 +941,6 @@ nav:not(.toggled) ul ul .dropdown-menu-toggle:before {
 	text-align: right;
 }
 
-/*--------------------------------------------------------------
-## Post Navigation
---------------------------------------------------------------*/
-
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
-	margin: 0 0 2em;
-	overflow: hidden;
-}
-
-.paging-navigation .nav-previous,
-.paging-navigation .nav-next {
-	display: none;
-}
-
-.site-main .paging-navigation .navigation {
-	margin: 0; /* Only for WordPress < 4.4 */
-}
-
-.site-main .post-navigation {
-	margin-bottom: 0;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -1530,141 +1456,6 @@ ol.comment-list {
 }
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-
-.widget-area .widget {
-    padding: 40px;
-}
-
-.widget {
-	margin: 0 0 30px;
-	box-sizing: border-box;
-}
-
-.sidebar .widget,
-.footer-widgets .widget {
-	font-size: 17px;
-}
-
-.widget select {
-	max-width: 100%;
-}
-
-.widget_search .search-submit {
-	display: none;
-}
-
-.widget_categories .children {
-	margin-left: 1.5em;
-	padding-top: 5px;
-}
-
-.widget_categories .children li:last-child {
-	padding-bottom: 0;
-}
-
-.sidebar .widget *:last-child,
-.footer-widgets .widget *:last-child {
-	margin-bottom: 0;
-}
-
-.widget-title {
-	margin-bottom: 30px;
-	font-size: 20px;
-	line-height: 1.5;
-	font-weight: normal;
-	text-transform: none;
-}
-
-.widget ul,
-.widget ol {
-	margin: 0;
-}
-
-.widget ul li {
-	list-style-type: none;
-	position: relative;
-	padding-bottom: 5px;
-}
-
-.widget .search-field {
-	width: 100%;
-}
-
-.widget:last-child,
-.separate-containers .widget:last-child {
-	margin-bottom: 0;
-}
-
-.widget_nav_menu ul ul,
-.widget_pages ul ul {
-	margin-left: 1em;
-	margin-top: 5px;
-}
-
-.widget ul li.menu-item-has-children,
-.widget ul li.page_item_has_children {
-	padding-bottom: 0;
-}
-
-#wp-calendar {
-	table-layout: fixed;
-	font-size: 80%;
-}
-
-#wp-calendar #prev,
-#wp-calendar #prev + .pad {
-	border-right: 0;
-}
-
-.sidebar .grid-container {
-	max-width: 100%;
-	width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Content Layout
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-## One Container
---------------------------------------------------------------*/
-
-.one-container.both-left .inside-left-sidebar,
-.one-container.both-right .inside-left-sidebar {
-	margin-right: 15px;
-}
-
-.one-container.both-left .inside-right-sidebar,
-.one-container.both-right .inside-right-sidebar {
-	margin-left: 15px;
-}
-
-.separate-containers .site-main > *:last-child,
-.one-container .site-main > *:last-child {
-	margin-bottom: 0;
-}
-
-.one-container:not(.page) .inside-article {
-	padding: 0 0 30px 0;
-}
-
-.one-container.right-sidebar .site-main,
-.one-container.both-right .site-main {
-	margin-right: 40px;
-}
-
-.one-container.left-sidebar .site-main,
-.one-container.both-left .site-main {
-	margin-left: 40px;
-}
-
-.one-container.both-sidebars .site-main {
-	margin: 0px 40px 0px 40px;
-}
-
-/*--------------------------------------------------------------
 ## Separate Containers
 --------------------------------------------------------------*/
 
@@ -1675,7 +1466,7 @@ ol.comment-list {
 .one-container .site-content,
 .inside-page-header,
 .wp-block-group__inner-container {
-	padding: 40px;
+	padding: 80px;
 }
 
 .separate-containers .widget,
