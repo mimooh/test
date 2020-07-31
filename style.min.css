@@ -951,7 +951,7 @@ nav:not(.toggled) ul ul .dropdown-menu-toggle:before {
 }
 
 .inside-header {
-	padding: 40px;
+	padding: 0px;
 }
 
 .main-title {
