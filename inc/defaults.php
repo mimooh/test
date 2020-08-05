@@ -75,7 +75,7 @@ if ( ! function_exists( 'generate_get_color_defaults' ) ) {
 				'top_bar_text_color' => '#ffffff',
 				'top_bar_link_color' => '#ffffff',
 				'top_bar_link_color_hover' => '#303030',
-				'header_background_color' => '#800000',
+				'header_background_color' => '#a00000',
 				'header_text_color' => '#3a3a3a',
 				'header_link_color' => '#3a3a3a',
 				'header_link_hover_color' => '',

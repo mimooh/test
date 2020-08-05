@@ -292,7 +292,7 @@
 			}
 
 			if ( 'red' === newval ) {
-				backgroundColorSetting.set( '#ed4250' );
+				backgroundColorSetting.set( '#800000' );
 				textColorSetting.set( '#ffffff' );
 
 				backgroundColorHoverSetting.set( '#c42f2f' );
